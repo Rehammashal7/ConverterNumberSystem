@@ -1,18 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        style="@style/ConText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/decimal" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        style="@style/ConEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:hint="@string/base_10"
+        android:inputType="numberDecimal"
+
+        />
+
+    <TextView
+        style="@style/ConText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/binary" />
+
+    <EditText
+        style="@style/ConEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="01"
+        android:hint="@string/base_2"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        style="@style/ConText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/octal" />
+
+    <EditText
+        style="@style/ConEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="01234567"
+        android:hint="@string/base_8"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        style="@style/ConText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hexadecimal" />
+
+    <EditText
+        style="@style/ConEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789aAbBcCdDeEFf"
+        android:hint="@string/base_16"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/smallmargin"
+        android:backgroundTint="@color/brand"
+        android:padding="@dimen/padding"
+        android:text="@string/convert"
+        android:textSize="@dimen/textSize"
+
+        />
+
+
+</LinearLayout>
