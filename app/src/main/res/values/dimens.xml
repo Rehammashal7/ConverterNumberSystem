@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="textSize">16sp</dimen>
-    <dimen name="padding">8dp</dimen>
-    <dimen name="smallmargin">4dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="edit_text_radius">12dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="button_radius">16dp</dimen>
 </resources>

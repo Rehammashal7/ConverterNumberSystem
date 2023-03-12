@@ -13,13 +13,20 @@
     <style name="ConText" parent="Widget.AppCompat.TextView">
         <item name="android:textSize">@dimen/textSize</item>
         <item name="android:padding">@dimen/padding</item>
-        <item name="android:layout_margin">@dimen/smallmargin</item>
-    </style>
-    <style name="ConEditText" parent="Widget.AppCompat.EditText">
-        <item name="android:backgroundTint">@color/brand</item>
-        <item name="android:padding">@dimen/padding</item>
-        <item name="android:layout_margin">@dimen/smallmargin</item>
 
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:layout_marginHorizontal">@dimen/margin_medium</item>
+        <item name="android:background">@drawable/draw</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+    </style>
+
+    <style name="btn_style">
+        <item name="android:layout_margin">@dimen/small_margin</item>
+        <item name="android:background">@drawable/btn</item>
+        <item name="android:layout_weight">1</item>
 
 
     </style>

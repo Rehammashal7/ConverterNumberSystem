@@ -9,15 +9,18 @@
     tools:context=".MainActivity">
 
     <TextView
+
         style="@style/ConText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/decimal" />
 
     <EditText
-        style="@style/ConEditText"
+        android:id="@+id/decimal_input"
+        style="@style/editTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
         android:digits="0123456789"
         android:hint="@string/base_10"
         android:inputType="numberDecimal"
@@ -31,9 +34,11 @@
         android:text="@string/binary" />
 
     <EditText
-        style="@style/ConEditText"
+        android:id="@+id/binary_input"
+        style="@style/editTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
         android:digits="01"
         android:hint="@string/base_2"
         android:inputType="numberDecimal" />
@@ -45,9 +50,11 @@
         android:text="@string/octal" />
 
     <EditText
-        style="@style/ConEditText"
+        android:id="@+id/octal_input"
+        style="@style/editTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
         android:digits="01234567"
         android:hint="@string/base_8"
         android:inputType="numberDecimal" />
@@ -59,23 +66,39 @@
         android:text="@string/hexadecimal" />
 
     <EditText
-        style="@style/ConEditText"
+        android:id="@+id/hexadecimal_input"
+        style="@style/editTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/margin_medium"
         android:digits="0123456789aAbBcCdDeEFf"
         android:hint="@string/base_16"
         android:inputType="text" />
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/smallmargin"
-        android:backgroundTint="@color/brand"
-        android:padding="@dimen/padding"
+        android:layout_marginHorizontal="@dimen/small_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/convert_button"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
         android:text="@string/convert"
-        android:textSize="@dimen/textSize"
+            />
 
-        />
+        <Button
+            android:id="@+id/clear_button"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            />
 
+        >
+    </LinearLayout>
 
 </LinearLayout>

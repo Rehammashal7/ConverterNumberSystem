@@ -9,4 +9,5 @@
     <string name="hexadecimal">Hexadecimal</string>
     <string name="base_16">Base 16</string>
     <string name="convert">Convert</string>
+    <string name="clear">clear</string>
 </resources>
